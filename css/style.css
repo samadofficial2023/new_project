@@ -457,7 +457,7 @@ header {
 
 .product {
   width: 23%;
-  
+
 
 
   padding: 5px;
@@ -533,6 +533,7 @@ header {
   background-color: rgb(102, 102, 105);
   padding-bottom: 5px;
 }
+
 .trolly_icon {
   display: none;
 }
@@ -684,72 +685,82 @@ header {
   .product {
     width: 31%;
     height: auto;
-    
+
   }
+
   .trolly_icon {
-   display: none;
-}
-
-  
-.big_banner {
-  width: 47%;
-}
-.newsletter {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-}
+    display: none;
+  }
 
 
-@media only screen and (min-width:200px) and (max-width:480px){
+  .big_banner {
+    width: 47%;
+  }
+
+  .newsletter {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}
+
+
+@media only screen and (min-width:200px) and (max-width:480px) {
   .feature_item {
     width: 100%;
-}
+  }
 
-.item {
-  width: 47%;
-}
-.big_banner {
-  width: 100%;
-}
-.sidebar {
-  display: none;
-}
-.actions {
-  width: 100%;
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  
-}
-.sort_by{
-  width: 100%;
-  margin-bottom: 10px;
-}
-.main_content {
-  width: 100%;
-}
-.newsletter {
-  width: 100%;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  
-}
-.footer_container{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.footer_container .col_1 {
-  width: 50%;
-  color: white;
-}
+  .item {
+    width: 47%;
+  }
+
+  .big_banner {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .actions {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .sort_by {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .main_content {
+    width: 100%;
+  }
+
+  .newsletter {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+  }
+
+  .footer_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer_container .col_1 {
+    width: 50%;
+    color: white;
+  }
 
 }
