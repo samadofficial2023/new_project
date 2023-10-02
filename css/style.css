@@ -126,7 +126,7 @@ header {
 .personal_info {
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 6%;
   color: white;
 
 
@@ -709,6 +709,18 @@ header {
 
 
 @media only screen and (min-width:200px) and (max-width:480px) {
+
+
+  .personal_info h1 {
+    font-size: 25px;
+
+  }
+
+  .personal_info h2 {
+    font-size: 22px;
+
+  }
+
   .feature_item {
     width: 100%;
   }
@@ -750,6 +762,10 @@ header {
     flex-direction: column;
     gap: 0.2rem;
 
+  }
+
+  .news_text {
+    font-size: 16px;
   }
 
   .footer_container {
