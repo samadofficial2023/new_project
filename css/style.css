@@ -649,23 +649,22 @@ header {
   }
 
   .categories_section h3 {
-    font-size: 20px;
-  }
-
-  .categories_section .list_item label {
     font-size: 14px;
+  }
+  .categories_section .list_item label {
+    font-size: 15px;
   }
 
   .price_section h3 {
-    font-size: 20px;
-  }
-
-  .price_section .list_item label {
     font-size: 14px;
   }
 
+  .price_section .list_item label {
+    font-size: 15px;
+  }
+
   .shipping_section h3 {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .shipping_section .list_item label {
