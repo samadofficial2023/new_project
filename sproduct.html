@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="This is ecommerce project" />
+
+    <!-- fontawesome cdn -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!------------------------------- nav starts here  -------------------->
+
+    <nav>
+      <div class="nav_logo">
+        <label>samad<span>ahmed</span></label>
+      </div>
+
+      <ul class="nav_list" id="navList">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <i
+          id="shopping_bag"
+          class="fa fa-shopping-basket"
+          aria-hidden="true"
+        ></i>
+        <i id="closeMenu" class="fa fa-times" aria-hidden="true"></i>
+      </ul>
+      <div id="mobile">
+        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        <i id="openMenu" class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </nav>
+
+    <!------------------------------- nav ends here  -------------------->
+
+    <main>
+      <section class="product_details section_padding section_margin">
+        <div class="single_pro_img">
+          <img src="img/tshirt6.jfif" alt="" width="100%" id="mainImg" class="main_img" />
+
+          <div class="small_img_group">
+
+            <div class="small_img_col">
+              <img src="img/tshirt6.jfif" alt="" width="100%" class="small_img" />
+            </div>
+
+            <div class="small_img_col">
+              <img src="img/tshirt5.jfif" alt="" width="100%" class="small_img" />
+            </div>
+
+            <div class="small_img_col">
+              <img src="img/tshirt3.jfif" alt="" width="100%" class="small_img" />
+            </div>
+
+            <div class="small_img_col">
+              <img src="img/tshirt5.jfif" alt="" width="100%" class="small_img" />
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="single_pro_details">
+          <h6>Home / T-Shirt</h6>
+          <h4>Men's fashion T shirt</h4>
+          <h2>300 taka</h2>
+          <select name="" id="">
+            <option value="">select size</option>
+            <option value="">XL</option>
+            <option value="">XXL</option>
+            <option value="">Small</option>
+            <option value="">Large</option>
+          </select>
+          <input type="number" name="" value="1" min="1" id="" />
+          <button>Add to Cart</button>
+          <h4>Prodetails</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex est
+            eos, officiis, ab eligendi iure reprehenderit corporis deleniti, sit
+            rem iusto alias exercitationem optio! Fugiat repellendus consequatur
+            aspernatur provident repudiandae pariatur quibusdam perferendis
+            libero consequuntur sed. Delectus doloribus, aliquid ducimus
+            voluptates sequi similique itaque tempore quasi dolorum, adipisci
+            consequuntur corrupti.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!------------------------------- footer starts here  -------------------->
+
+    <footer>
+      <section class="footer_container section_padding">
+        <div class="col_1">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+          </ul>
+        </div>
+
+        <div class="col_1">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+          </ul>
+        </div>
+
+        <div class="col_1">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+          </ul>
+        </div>
+
+        <div class="col_1">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+            <li><a href="#">lorem lorem lorem</a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="copyright">
+        <p>&copy; copyright samadahmed.All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!------------------------------- footer ends here  -------------------->
+
+    <script src="./scripts/script.js"></script>
+    <script>
+      let mainImg = document.getElementById("mainImg");
+      let smallImg = document.getElementsByClassName("small_img");
+
+      smallImg[0].onclick = function () {
+        mainImg.src = smallImg[0].src;
+      };
+      smallImg[1].onclick = function () {
+        mainImg.src = smallImg[1].src;
+      };
+      smallImg[2].onclick = function () {
+        mainImg.src = smallImg[2].src;
+      };
+      smallImg[3].onclick = function () {
+        mainImg.src = smallImg[3].src;
+      };
+      
+    </script>
+  </body>
+</html>
